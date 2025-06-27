@@ -324,6 +324,257 @@ body {
   color: var(--text-secondary);
 }
 
+/* SEÇÃO IA EXPLICATIVA */
+.ai-explanation {
+  padding: 80px 0;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+
+.ai-comparison {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  margin: 3rem 0;
+}
+
+.comparison-card {
+  background: var(--bg-primary);
+  border-radius: var(--border-radius);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  transition: var(--transition);
+  border: 2px solid transparent;
+}
+
+.comparison-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-lg);
+}
+
+.comparison-card.traditional {
+  border-color: #ef4444;
+}
+
+.comparison-card.ai-powered {
+  border-color: var(--accent-color);
+  background: linear-gradient(
+    135deg,
+    var(--bg-primary) 0%,
+    rgba(6, 182, 212, 0.05) 100%
+  );
+}
+
+.card-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.card-header i {
+  font-size: 2rem;
+}
+
+.traditional .card-header i {
+  color: #ef4444;
+}
+
+.ai-powered .card-header i {
+  color: var(--accent-color);
+}
+
+.card-header h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--text-primary);
+}
+
+.card-label {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card-label.outdated {
+  background-color: #ef4444;
+  color: white;
+}
+
+.card-label.modern {
+  background-color: var(--accent-color);
+  color: white;
+}
+
+.features-list {
+  list-style: none;
+  margin: 0 0 1.5rem 0;
+  padding: 0;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 0.95rem;
+}
+
+.traditional .features-list i {
+  color: #ef4444;
+}
+
+.ai-powered .features-list i {
+  color: var(--success-color);
+}
+
+.example-box {
+  background-color: var(--bg-secondary);
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+.example-box p {
+  margin: 0 0 0.75rem 0;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.chat-example {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.message {
+  padding: 0.75rem 1rem;
+  border-radius: 18px;
+  font-size: 0.9rem;
+  max-width: 85%;
+}
+
+.message.user {
+  background-color: var(--accent-color);
+  color: white;
+  align-self: flex-end;
+  border-bottom-right-radius: 8px;
+}
+
+.message.bot {
+  align-self: flex-start;
+  border-bottom-left-radius: 8px;
+}
+
+.message.bot.error {
+  background-color: #fef2f2;
+  color: #dc2626;
+  border: 1px solid #fecaca;
+}
+
+.message.bot.success {
+  background-color: #f0f9ff;
+  color: #0369a1;
+  border: 1px solid #bae6fd;
+}
+
+.ai-benefits {
+  margin: 4rem 0 3rem;
+  text-align: center;
+}
+
+.benefits-title {
+  font-size: 1.75rem;
+  color: var(--text-primary);
+  margin-bottom: 3rem;
+  font-weight: 600;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.benefit-item {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.benefit-icon {
+  background: linear-gradient(
+    135deg,
+    var(--accent-color),
+    var(--success-color)
+  );
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 1rem;
+  box-shadow: var(--shadow);
+}
+
+.benefit-icon i {
+  font-size: 2rem;
+  color: white;
+}
+
+.benefit-item h4 {
+  font-size: 1.25rem;
+  color: var(--text-primary);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.benefit-item p {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.ai-cta {
+  background: linear-gradient(
+    135deg,
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  border-radius: var(--border-radius);
+  padding: 3rem;
+  text-align: center;
+  color: white;
+  margin-top: 3rem;
+}
+
+.ai-cta h3 {
+  font-size: 1.75rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.ai-cta p {
+  font-size: 1.125rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+}
+
+.ai-cta .cta-button {
+  background: white;
+  color: var(--primary-color);
+  font-weight: 600;
+}
+
+.ai-cta .cta-button:hover {
+  background: var(--bg-secondary);
+  transform: translateY(-2px);
+}
+
 /* SEÇÃO PARA QUEM */
 .target-audience {
   padding: 80px 0;
@@ -910,6 +1161,23 @@ body {
 
   .contact-content {
     grid-template-columns: 1fr;
+  }
+
+  .ai-comparison {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .comparison-card {
+    padding: 1.5rem;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .ai-cta {
+    padding: 2rem;
   }
 
   .footer-content {
