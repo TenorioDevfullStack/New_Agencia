@@ -948,6 +948,11 @@ body {
   font-size: 1.5rem;
 }
 
+.footer-brand .logo-footer {
+  height: 60px;
+  width: auto;
+}
+
 .footer-info {
   text-align: right;
 }
