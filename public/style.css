@@ -1123,7 +1123,7 @@ body {
 }
 
 /* RESPONSIVIDADE */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .nav-menu {
     position: fixed;
     left: -100%;
@@ -1218,6 +1218,24 @@ body {
   }
 }
 
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .logo {
+    font-size: 1.25rem;
+  }
+
+  .logo-image {
+    height: 40px;
+  }
+}
+
 @media (max-width: 480px) {
   .container {
     padding: 0 15px;
@@ -1242,6 +1260,18 @@ body {
   .faq,
   .contact {
     padding: 60px 0;
+  }
+
+  .logo {
+    font-size: 1rem;
+  }
+
+  .logo-image {
+    height: 35px;
+  }
+
+  .nav-brand {
+    gap: 0.5rem;
   }
 }
 
