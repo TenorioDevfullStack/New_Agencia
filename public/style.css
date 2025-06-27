@@ -114,6 +114,12 @@ body {
   color: var(--primary-color);
 }
 
+.logo-image {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
 .nav-list {
   display: flex;
   list-style: none;
